@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltVision | Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <div id="menu-container"></div>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TÍTULO -->
+        <section class="page-title">
+            <h1>
+                Sistema Inteligente de Monitoramento Elétrico
+            </h1>
+            <p>
+                Dashboard de monitoramento energético em tempo real
+            </p>
+        </section>
+
+        <!-- CARDS -->
+        <section class="cards">
+            <div class="card">
+                <h3>Consumo Total</h3>
+                <p class="big">00,0 kWh</p>
+                <span class="green">↓ 00,0%</span>
+            </div>
+
+            <div class="card">
+                <h3>Potência Média</h3>
+                <p class="big">00 W</p>
+                <span>Pico: 0.000 W</span>
+            </div>
+
+            <div class="card">
+                <h3>Horário de Pico</h3>
+                <p class="big">00h - 00h</p>
+                <span>Média: 0,00 kWh</span>
+            </div>
+
+            <div class="card">
+                <h3>Temp. Média</h3>
+                <p class="big">00,0 °C</p>
+                <span>00°C - 00°C</span>
+            </div>
+
+        </section>
+
+        <!-- GRID -->
+        <section class="grid">
+            <!-- GRÁFICO -->
+            <div class="chart">
+                <h3>Evolução do Consumo</h3>
+                <div class="fake-chart"></div>
+            </div>
+
+            <!-- TABELA -->
+            <div class="table">
+                <h3>Dados Coletados</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>kWh</th>
+                                <th>Potência</th>
+                                <th>Temp</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>00/00 00:00</td>
+                                <td>00.00</td>
+                                <td>00W</td>
+                                <td>00°C</td>
+                            </tr>
+
+                            <tr>
+                                <td>00/00 00:00</td>
+                                <td>00.00</td>
+                                <td>00W</td>
+                                <td>00°C</td>
+                            </tr>
+
+                            <tr>
+                                <td>00/00 00:00</td>
+                                <td>00.00</td>
+                                <td>00W</td>
+                                <td>00°C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALERTAS -->
+        <section class="alerts">
+            <div class="alert red">
+
+                <strong>
+                    Equipamento ligado fora do horário
+                </strong>
+                <p>
+                    Ar-condicionado ligado às 00:00
+                </p>
+            </div>
+            <div class="alert orange">
+                <strong>
+                    Consumo elevado
+                </strong>
+                <p>
+                    Ambiente vazio detectado
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
